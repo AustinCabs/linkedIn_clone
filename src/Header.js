@@ -1,7 +1,10 @@
 import React from 'react'
 import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
-
+import HeaderOption from './HeaderOption'
+import HomeIcon  from '@material-ui/icons/Home';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+ 
 function Header() {
     return (
         <div className="header">
@@ -16,10 +19,13 @@ function Header() {
             </div>            
             
             <div className="header__right">
-            
+                <HeaderOption title="Home" Icon={HomeIcon} />
+                <HeaderOption title="My Network" Icon={SupervisorAccountIcon} />
+                {/* <HeaderOption title=""   Icon={SearchIcon}/> */}
             </div>            
         </div>
     )
 }
+
 
 export default Header
